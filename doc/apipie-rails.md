@@ -22,10 +22,20 @@ validate
 
 ## Todo dig 
 
+* number时的验证，如 tag_id= ??? allow_nil: true
+
 * Integer support or number ??
 
   /users/1 时 1会被解析成字符串，导致TypeValidator没有按预期执行
   可以用NumberValidator, parma :id, :number
+
+  better!
+
+  other way:
+
+  set config.process_params = true, then
+  扩展TypeValidator, 增加process_value方法 Integer('1')
+
 
 * how to better config in production mode?
 
@@ -35,3 +45,10 @@ validate
 
 * run in just non-production? 有何影响，还会检查参数吗？
 
+* 如何生成静态文档及更新机制？
+
+× 如何发布？
+
+× 在手机环境中认证机制介入, apipie中的认证只是对文档访问的认证; api访问认证和apidoc访问认证是两个概念！
+
+* 与test的集成

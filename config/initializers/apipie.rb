@@ -6,6 +6,6 @@ Apipie.configure do |config|
   config.api_controllers_matcher = "#{Rails.root}/app/controllers/*.rb"
 
   config.default_version = 'v1'
-  config.copyright = "@Tianji"
+  config.copyright = "&copy; #{Time.now.year} Tianji"
   config.app_info = "Long app info here!"
 end

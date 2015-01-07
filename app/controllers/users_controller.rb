@@ -3,14 +3,14 @@ class UsersController < ApplicationController
 
   resource_description do #at controller level
     #avaliable keywords: ref dsl_definition.rb#Resource module
-    resource_id 'customers'
+    resource_id 'babies'
     short "short description placeholder"
     desc "full description placeholder"
   end
 
-  api :GET, '/customers', 'get customers'
+  api :GET, '/babies', 'get babies'
   desc "get customer list in long description"
-  see 'customers#show', 'doc in show action'
+  see 'babies#show', 'doc in show action'
   #api_version '1.0', :v2
   def index
     @users = User.all
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     end
   end
 
-  api :GET, '/customers/:id', 'Get specified user info'
+  api :GET, '/babies/:id', 'Get specified user info'
   param :id, :number, required: true 
   #param :id, Integer #Integer (not work for /users/1, params[:id]=>'1' as string)
   formats ['json', 'html']

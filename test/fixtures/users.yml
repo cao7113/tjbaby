@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-  email: MyString
-  birthday: MyString
+cao:
+  name: CaoCao
+  email: caocao@tianji.com
+  birthday: <%=Date.parse('1982-2-3')%>
 
-two:
-  name: MyString
-  email: MyString
-  birthday: MyString
+mao:
+  name: MaoZedong
+  email: maozedong@tianji.com
+  birthday: <%=Date.parse('1882-2-3')%>

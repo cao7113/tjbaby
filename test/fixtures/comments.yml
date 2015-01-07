@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+<%1.upto(3) do |i|%>
+comment<%=i%>:
+  content: <%=%>
+  user: cao
+<%end%>
+
+<%1.upto(5) do |i|%>
+comment<%=i%>:
+  content: <%=%>
+  user: mao
+<%end%>

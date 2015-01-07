@@ -1,4 +1,7 @@
 Tjbaby::Application.routes.draw do
+  resources :comments
+
+
   resources :users
 
 
