@@ -1,6 +1,6 @@
-# Tianji Baby
+# Tj Baby
 
-目的： 开发时模拟tianjicom中某些特性
+目的： 开发模拟Tj特性
 
 Just for demo and tries and developer's idea. 
 
